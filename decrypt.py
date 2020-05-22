@@ -9,7 +9,9 @@ alpha_list = ['a','b','c','d','e','f','g','h','i','j',
 'w','x','y','z','a','b','c','d','e',
 'f','g','h','i','j','k','l','m','n',
 'o','p','q','r','s','t','u','v','w','x',
-'y']
+'y','z','a','b','c','d','e',
+'f','g','h','i','j','k','l','m','n',
+'o','p','q','r','s','t','u','v','w','x','y','z']
 
 #Getting Inputs
 input_text = input("Input Text: ")
@@ -44,7 +46,7 @@ for char in text_list:
 dec_string=''.join (map(str,decrypt))
 
 #Fixing double character Error
-for dec in range (0,len(dec_string),2):
+for dec in range (0,len(dec_string),3):
     last_list.append(dec_string[dec])
 
 if operation == "enc":
